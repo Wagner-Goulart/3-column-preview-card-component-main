@@ -1,0 +1,111 @@
+:root {
+    --sedans-bg-color: hsl(31, 77%, 52%);
+    --suvs-bg-color: hsl(184, 100%, 22%);
+    --luxury-bg-color: hsl(179, 100%, 13%);
+    --paragraphs-color: hsla(0, 0%, 100%, 0.75);
+    --gereral-color: hsl(0, 0%, 95%);
+
+    --general-font-size: 15px;
+
+    --paragraphs-font-family :'Lexend Deca', sans-serif;
+    --headings-font-family: 'Big Shoulders Display', cursive;
+}
+
+body {
+    /* min-width: 100vw; */
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: var(--paragraphs-font-family);
+    font-size: var(--general-font-size);
+    padding: 30px;
+}
+
+.container {
+    max-width: 1440px;
+    display: grid;
+    grid-template-columns: repeat(3,minmax(100px,300px));
+    
+}
+
+.tipo-de-carro {
+    padding: 40px 50px;
+    color: var(--gereral-color);
+}
+
+.tipo-de-carro .icone-carro {
+    margin-bottom: 20px;
+}
+
+.tipo-de-carro h1 {
+    font-family:var(--paragraphs-font-family);
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.tipo-de-carro p {
+    font-size: 1.4rem;
+    margin-bottom: 50px;
+}
+
+.tipo-de-carro a {
+    background-color: var(--gereral-color);
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: 0.2s;
+}
+
+.tipo-de-carro a:hover {
+    background-color: transparent;
+    color: var(--gereral-color);
+    border: 2px solid var(--gereral-color);
+}
+
+.sedans{
+    background-color: var(--sedans-bg-color);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.suvs {
+    background-color: var(--suvs-bg-color);
+}
+
+.luxury {
+    background-color: var(--luxury-bg-color);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.sedans-info {
+    color: var(--sedans-bg-color);
+}
+
+.suvs-info {
+    color: var(--suvs-bg-color);
+}
+
+.luxury-info {
+    color: var(--luxury-bg-color);
+}
+
+.attribution {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: var(--suvs-bg-color);
+}
+
+.attribution a {
+    color: var(--luxury-bg-color);
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.attribution a:hover {
+    text-decoration: underline;
+}
+
